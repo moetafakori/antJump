@@ -1,0 +1,30 @@
+<body style="height: 100vh; text-align: center; background-color: black">
+<canvas id="c" width="500"height="500"></canvas>
+<script>
+    context = c.getContext("2d");
+    const ant = new Image();
+    ant.src =  "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMi4zMyAxMC40OSI+PHBhdGggZD0iTTM4LjksNTkuNDZoMS43OGExLjM0LDEuMzQsMCwwLDAtMS0uNDQuNDguNDgsMCwwLDEtLjUtLjM5Yy0uMTktLjU4LS40My0xLjE0LS42Mi0xLjcyYTUuMjEsNS4yMSwwLDAsMS0uMDgtLjU3YzAtLjE0LS4xLS4zMy0uMjEtLjM5YS42Ny42NywwLDAsMC0uNDQsMGMtLjM2LjEzLS43MS4yOC0xLjE2LjQ3bC4xOS0uODgsMS43Mi0uMzFjLjA4LjIyLjE4LjQ2LjI3Ljcxcy4xOS4yOC40Mi4yLjc2LS4yNCwxLjE0LS4zNmEuNDQuNDQsMCwwLDEsLjY0LjMyYy4yOS45MS41OCwxLjgyLjg1LDIuNzNhMywzLDAsMCwxLC4wNS42MWgxLjhhMS4zMywxLjMzLDAsMCwwLTEtLjQ0LjQ1LjQ1LDAsMCwxLS40OC0uNDFjLS4yMy0uOC0uNS0xLjU5LS43My0yLjM5YTQsNCwwLDAsMS0uMTMtLjc3LjQuNCwwLDAsMC0uNjItLjM0Yy0uNDkuMjQtMSwuNDUtMS41My43LS4wOS0uMjMtLjEzLS4zOC0uMi0uNTFhLjMxLjMxLDAsMCwxLC4xMy0uNDYsMS4xOSwxLjE5LDAsMCwwLC41NS0xLjE4bC4yOC4xOGE2LjMzLDYuMzMsMCwwLDAsMi42MSwxLjM4LDQuNDYsNC40NiwwLDAsMCwuNTEuMDdjLjUzLDAsLjcyLS4wOS44MS0uNjFBOC40OSw4LjQ5LDAsMCwwLDQ0LDUyLjg3LDIuMzUsMi4zNSwwLDAsMCw0Mi41OSw1MWMtLjE0LS4wOC0uMjgtLjE0LS40My0uMjFhMS43MywxLjczLDAsMCwxLDIuMjMtMS4yNywxLjMzLDEuMzMsMCwwLDEsLjg5LDEuMjksMS45MSwxLjkxLDAsMCwwLDAsLjYzYy4wNy4xNy4yOS4yOS40NC40My4xMS0uMTQuMzItLjI3LjMzLS40MkEyLjI2LDIuMjYsMCwwLDAsNDUsNDkuNGExLjgsMS44LDAsMCwwLTIuNTUuMjMsMi4zNiwyLjM2LDAsMCwwLS40NS42Yy0uMTYuMzgtLjM4LjQ0LS43Ny4zOGEyLDIsMCwwLDAtMS40NC4zMywxLjUzLDEuNTMsMCwwLDAtLjYsMS44OSw0LjMyLDQuMzIsMCwwLDAtMi4zOS0uNiwzLjM4LDMuMzgsMCwwLDAtMi4yOC44OEExLjI1LDEuMjUsMCwwLDAsMzIuNzYsNTNhMi43MywyLjczLDAsMCwwLTEuMjEtMS44OCw0Ljc2LDQuNzYsMCwwLDAtNC44OC0uMzUsMi4zMywyLjMzLDAsMCwwLS44NC43MiwxMy43MiwxMy43MiwwLDAsMC0yLjExLDQuNDEsMTkuMzUsMTkuMzUsMCwwLDAsNC45Mi4xNCwxMi4zNCwxMi4zNCwwLDAsMCwxLjktLjQsMy4yMSwzLjIxLDAsMCwwLDEuOC0xLjJsLjYyLjY3LjE3LS4xMy0uMjcsMS4xLS4xLDBhNS4wNyw1LjA3LDAsMCwwLS4zNi0uNTRjLS4xMS0uMTItLjI4LS4yOC0uNDItLjI4cy0uMjcuMi0uMzcuMzQtLjEzLjMxLS4yMi40NWMtLjYzLjg2LTEuMjcsMS43LTEuODgsMi41N2EuOC44LDAsMCwxLS42Ni4zNiwxLjY3LDEuNjcsMCwwLDAtMS4xNi40NGgxLjczbDEuNC0xLjkxYy4zMi0uNDMuNjQtLjg1Ljk1LTEuMjguMTctLjI1LjM1LS4yNS41NSwwbC40Mi40MmMuMTkuMTcuMzQuMTYuNDEtLjExcy4yMi0uNzkuMy0xLjE5YS40MS40MSwwLDAsMSwuMzQtLjM2LDIuOTEsMi45MSwwLDAsMCwuNjEtLjI4bDIsLjg4YzAsLjI0LS4xMy41Ny0uMi45MXMwLC40LjM0LjMzLjU5LS4xMy44OC0uMjJhLjUyLjUyLDAsMCwxLC43LjM5Yy4yMi42MS40NSwxLjIxLjY2LDEuODNBNC41Miw0LjUyLDAsMCwxLDM4LjksNTkuNDZaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMuNzIgLTQ4Ljk3KSIvPjwvc3ZnPg==";
+    antX = antDY = score = bestScore = 0;
+    antSize = interval = stoneWidth = 24;
+    canvasSize = stoneX = 500;
+    stoneGap = antY = 476;
+    c.onclick = () => (antDY = 4)
+    setInterval(() => {
+        context.fillStyle = 'FloralWhite';
+        context.fillRect(0,0,canvasSize,canvasSize);
+        antY -= antDY;
+        antY <= 400 && (antDY = -4);
+        antY == 476 && (antDY = 0);
+        context.drawImage(ant, antX, antY, antSize * 2, antSize); // Draw ant
+        context.fillStyle = "goldenRod";
+        stoneX -= 8; // Move stone
+        stoneX < -stoneWidth && // stone off screen?
+        ((stoneX = canvasSize), ((stoneX = (stoneX * Math.random()) + 250))); // Reset stone and randomize gap.
+        context.fillRect(stoneX, stoneGap, stoneWidth, canvasSize); 
+        context.fillText(score++, 10, 25); // Increase and draw score
+        bestScore = bestScore < score ? score : bestScore; // New best score?
+        context.fillText(`رکورد: ${bestScore}`, 10, 50); // Draw best score
+        ((stoneX < antSize) && (antY > 452)) && (alert(`Game Over, Score :${score}`), (birdDX = 0), (stoneX = canvasSize), (score = 0));
+    }, interval)
+</script>
+</body>
